@@ -1,17 +1,10 @@
-<header>
-<nav>
-    <div class="left">
+const menuButton = document.querySelector('#menu-bar');
+const cancelButton = document.querySelector('#cancel-btn');
+const navBar = document.querySelector('.responsive_nav_bar');
 
-    </div>
-    <div class="center">
-
-    </div>
-    <div class="right">
-    <a href=""><i class="uil uil-envelope-alt"></i></a>
-             
-                
-             <a href=""><i class="uil uil-phone-alt"></i></a>
-         
-             <a href=""><i class="uil uil-map-pin-alt"></i></a>
-    </div>
-</nav>
+menuButton.addEventListener('click', ()=> {
+    navBar.style.width = '100%';
+});
+cancelButton.addEventListener('click', ()=>{
+    navBar.style.width = "0%";
+})
