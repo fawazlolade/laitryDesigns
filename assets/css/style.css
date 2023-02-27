@@ -195,7 +195,7 @@ color: palevioletred;
         min-height: var(--header-height);
         width: var(--header-width);
         position: relative;
-        background-image: linear-gradient(rgba(4, 9, 30, 0.4), rgba(4, 9, 30, 0.4)), url('/assets/img/bg-image.jpg');
+        background-image: linear-gradient(rgba(4, 9, 30, 0.4), rgba(4, 9, 30, 0.4)), url('assets/img/bg-image.jpg');
         background-size: cover;
         background-position: center;
     }
