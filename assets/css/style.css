@@ -33,12 +33,13 @@ h1,h2,h3,h4{
 
 /*============media query==========*/
 
-@media (min-width: 968px) {
+@media (min-width: 940px) {
     .desktop_header{
         min-height: var(--header-height);
         width: var(--header-width);
         background: var(--body-color);
         position: relative;
+        overflow: hidden;
     }
 
     nav{
@@ -75,7 +76,7 @@ h1,h2,h3,h4{
     .desktop_nav_center a{
         color: #333;
         font-family: var(--logo-font);
-        font-size: 1.80rem;
+        font-size: 1.90rem;
     }
     .desktop_nav_right a{
         color: #444;
@@ -119,8 +120,14 @@ h1,h2,h3,h4{
         letter-spacing: 1.5px;
         margin: 30px 0;
     }
+    .line{
+        border: 1px solid #7071;
+        clip-path: circle(130% 90% at 40% 10%);
+    }
+    
+
     .message_us{
-        background-color: #161527;
+        background-color: #F761A1;
         border: none;
         color: white;
         font-size: 15px;
@@ -128,6 +135,7 @@ h1,h2,h3,h4{
         padding: 20px 25px;
         border-radius: 12px;
     }
+   
     .social_btns{
         margin-top: 2.5rem;
     }
@@ -146,7 +154,276 @@ h1,h2,h3,h4{
     
     }
     
+.mobile_header{
+    display: none;
+}
+.about_us{
+    padding-top: 100px;
+    width: 60%;
+    display: block;
+    margin: 0px auto;
+    text-align: center;
     
 }
+.about_us h1{
+    font-size: 48px;
+}
+.about_us p{
+    margin: 15px 0;
+    font-family: var(--body-font);
+    
+}    
+
+
+#slider{
+color: palevioletred;
+
+}
+#bg-img{
+    max-width: 200px;
+    height: 5%;
+    display: block;
+    margin: 0px auto;
+}
+}
+
+@media (max-width:939px){
+    .desktop_header{
+        display: none;
+    }
+    .mobile_header{
+        min-height: var(--header-height);
+        width: var(--header-width);
+        position: relative;
+        background-image: linear-gradient(rgba(4, 9, 30, 0.4), rgba(4, 9, 30, 0.4)), url('/assets/img/bg-image.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+   
+    .mobile_nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2% 6%;
+    }
+    .responsive_logo {
+        color:pink;
+        font-size: 1.95rem;
+        font-family: var(--logo-font);
+        
+    }
+    #menu-bar{
+        color: #F761A1;
+        cursor: pointer;
+        font-size: 35px;
+
+    }
+    .responsive_nav_bar{
+        height: 100%;
+        width:0;
+        position: fixed;
+        top:0;
+        left: 0;
+        z-index: 1;
+        
+        overflow-x: hidden;
+        background-color:white;
+        transition: .5s;  
+    }
+    .responsive_nav_links{
+        padding: 24px;
+    }
+    .responsive_nav_bar a{
+        color: #161527;
+        display: block;
+        font-family: var(--body-font);
+        font-weight: 500;
+        font-size: 16px;
+        margin: 5% 5%;
+        padding: 14px 16px;
+        text-align: left;
+      
+
+
+    }
+    .responsive_nav_bar a:hover{
+        color: #F761A1;
+    }
+    #cancel-btn{
+        cursor: pointer;
+        font-size: 30px;
+        font-weight: 800;
+        position: absolute;
+        top:3%;
+        right: 5%;
+    }
+    #cancel-btn:hover{
+        color: #F761A1;
+        cursor: pointer;
+        
+    }
+    
+
+    .responsive_info_text_container{
+        width: 100%;
+        top: 50%;
+        left: 50%;
+        position: absolute;
+        transform: translate(-50%, -50%);
+      
+
+
+    }
+    .responsive_info_text_container h2{
+        color: ivory;
+        font-size: 40px;
+        letter-spacing: 3.5px;
+        text-align: center;
+    }
+    .responsive_info_text_container h1{
+        color:#F5FEFD;
+        font-size: 64px;
+        letter-spacing: 4px;
+        text-align: center;
+    }
+    .responsive_info_text_container p{
+        color:floralwhite;
+        width: 85%;
+        text-align: center;
+        letter-spacing: 1.2px;
+        font-family: var(--body-font);
+        margin: 0px auto;
+    }
+    #side-line{
+        color: #F761A1;
+        width: 10px;
+        height: 15px;
+        display: block;
+
+    }
+    .responsive_message_us{
+        background:linear-gradient(to right,#F761A1, pink ) ;
+        border: none;
+        color: white;
+        display: block;
+        width: 35%;
+        margin: 40px auto;
+        font-size: 15px;
+        font-family: var(--body-font);
+        padding: 20px 25px;
+        text-align: center;
+    }
+    .responsive_message_us:hover{
+        background: #F761A1;
+        transition: .5s;
+    }
+    #down-btn{
+        bottom: 8%;
+        right: 4%;
+        position: absolute;
+        font-size: 40px;
+        color: aliceblue;
+
+    }
+    #down-btn:hover{
+        color:#F761A1;
+        cursor: pointer;
+    }
+    .about_us{
+        padding-top: 100px;
+        width: 90%;
+        
+        display: block;
+        margin: 0px auto;
+        text-align: center;
+        
+    }
+    .about_us h1{
+        font-size: 48px;
+    }
+    .about_us p{
+        margin: 15px 0;
+        font-family: var(--body-font);
+        
+    }    
+    
+    
+    #slider{
+    color: palevioletred;
+    
+    }
+
+    #bg-img{
+        width: 250px;
+    
+        display: block;
+        margin: 0px auto;
+    }
+}
+@media (max-width: 480px){
+    .responsive_info_text_container h2{
+        font-size: 35px;
+    }
+    .responsive_info_text_container h1{
+        font-size: 45px
+    }
+    .responsive_info_text_container p{
+        color:floralwhite;
+        width: 85%;
+        font-size: 15px;
+        letter-spacing: 1.2px;
+        font-family: var(--body-font);
+        margin: 0px auto;
+    }    
+    .responsive_message_us{
+        width: 60%;
+    }
+    .about_us h1{
+        font-size: 35px;
+    }
+
+    #bg-img{
+        max-width: 300px;
+        height: 5%;
+        display: block;
+        margin: 0px auto;
+    }
+}
+    @media (max-width: 320px){
+        .responsive_logo {
+            font-size: 27px;
+        }
+        .responsive_info_text_container h2{
+            font-size: 25px;
+        }
+
+        #down-btn{
+            bottom: 2%;
+        }
+    .responsive_info_text_container p{
+        letter-spacing: 0.3px;
+        width: 90%;
+        text-align: center;
+    }
+        .responsive_message_us{
+            width: 80%;
+        }
+        .about_us h1{
+            font-size: 30px;
+        }
+       
+        #bg-img{
+            max-width: 200px;
+            height: 5%;
+            display: block;
+            margin: 0px auto;
+        }
+        
+
+}    
+
+
+
+
     
     
