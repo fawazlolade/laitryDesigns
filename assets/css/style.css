@@ -159,7 +159,7 @@ h1,h2,h3,h4{
 }
 .about_us{
     padding-top: 100px;
-    width: 60%;
+    width: 80%;
     display: block;
     margin: 0px auto;
     text-align: center;
@@ -168,6 +168,14 @@ h1,h2,h3,h4{
 .about_us h1{
     font-size: 48px;
 }
+.about_us h1::after{
+content: '';
+    background: #F761A1;
+width: 100px;
+height: 5px;
+display: block;
+margin: 0 auto;
+}
 .about_us p{
     margin: 15px 0;
     font-family: var(--body-font);
@@ -175,16 +183,14 @@ h1,h2,h3,h4{
 }    
 
 
-#slider{
-color: palevioletred;
 
-}
 #bg-img{
     max-width: 200px;
     height: 5%;
     display: block;
     margin: 0px auto;
 }
+
 }
 
 @media (max-width:939px){
@@ -195,7 +201,7 @@ color: palevioletred;
         min-height: var(--header-height);
         width: var(--header-width);
         position: relative;
-        background-image: linear-gradient(rgba(4, 9, 30, 0.4), rgba(4, 9, 30, 0.4)), url('assets/img/bg-image.jpg');
+        background-image: linear-gradient(rgba(4, 9, 30, 0.4), rgba(4, 9, 30, 0.4)), url('/assets/img/bg-image.jpg');
         background-size: cover;
         background-position: center;
     }
@@ -341,6 +347,13 @@ color: palevioletred;
     .about_us h1{
         font-size: 48px;
     }
+    .about_us h1::after{
+        background: #F761A1;
+        width: 100px;
+        height: 5px;
+        display: block;
+        margin: 0 auto;
+        }
     .about_us p{
         margin: 15px 0;
         font-family: var(--body-font);
@@ -381,6 +394,13 @@ color: palevioletred;
     .about_us h1{
         font-size: 35px;
     }
+    .about_us h1::after{
+        background: #F761A1;
+        width: 100px;
+        height: 5px;
+        display: block;
+        margin: 0 auto;
+        }
 
     #bg-img{
         max-width: 300px;
@@ -423,7 +443,47 @@ color: palevioletred;
 }    
 
 
-
+.service_container{
+    width: 100%;
+    height: 100vh;
+    padding: 80px 8%;
+    
+}
+.service_container h1{
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+.service_container h1::after{
+    content: '';
+    background: #F761A1;
+    width: 100px;
+    height: 5px;
+    display: block;
+    margin: 0 auto;
+}
+.row{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 30px;
+}
+.service{
+    padding: 15px 10px;
+    border-radius: 5px;
+    background: transparent;
+    /* background:linear-gradient(to right, #F761A1, pink); */
+    text-align: center;
+    box-shadow: 3px 3px 3px 3px lavender;
+}
+.service:hover{
+    transform: scale(1.05);
+    background:white;
+}
+.service h2,p{
+    color:#000;
+    margin: 20px 0;
+    font-family: var(--body-font);
+}
 
     
     
